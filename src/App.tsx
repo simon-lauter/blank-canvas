@@ -7,19 +7,15 @@ import NotFound from "./pages/NotFound";
 function App() {
   return (
     <BrowserRouter>
-      <div className="app-container">
-        <Navigation />
-        <main>
-          <Routes>
-            {/* Add your routes here */}
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
+      <Navigation />
+      <Routes>
+        {/* Add your routes here */}
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
 
-            {/* 404 - Catch all unmatched routes */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </main>
-      </div>
+        {/* 404 - Catch all unmatched routes */}
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </BrowserRouter>
   );
 }

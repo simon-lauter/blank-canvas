@@ -1,12 +1,8 @@
 /* Global Styles und Theme Setup */
-.app-container{
-    background-color: var(--gray-2);
-}
-
-body {
+main, body, #root {
   font-family: var(--ff);
-  background-color: var(--gray-2);
-  color: var(--gray-12);
+  background-color: var(--gray-2);  
+  color: var(--gray-12);  
 }
 
 /* Standard HTML Elemente verwenden Landing Page Sizes per default */
