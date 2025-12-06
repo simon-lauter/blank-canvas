@@ -10,11 +10,11 @@ import App from "./App.tsx";
 const rootElement = document.getElementById("root");
 if (!rootElement) throw new Error("Failed to find the root element");
 
-const colorScheme = window.matchMedia('(prefers-color-scheme: dark)');
+const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
 
 createRoot(rootElement).render(
   <StrictMode>
-    <Theme appearance={colorScheme.matches ? "dark" : "light"}>
+    <Theme appearance={isDarkMode.matches ? "dark" : "light"}>
       <App />
     </Theme>
   </StrictMode>
