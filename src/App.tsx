@@ -1,13 +1,13 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Navigation from './components/Navigation'
-import Home from './pages/Home'
-import About from './pages/About'
-import NotFound from './pages/NotFound'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navigation from "./components/Navigation";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
     <BrowserRouter>
-      <div>
+      <div className="app-container">
         <Navigation />
         <main>
           <Routes>
@@ -21,7 +21,7 @@ function App() {
         </main>
       </div>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;

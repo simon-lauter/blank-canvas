@@ -1,8 +1,11 @@
 /* Global Styles und Theme Setup */
+.app-container{
+    background-color: var(--gray-2);
+}
 
 body {
   font-family: var(--ff);
-  background-color: var(--gray-1);
+  background-color: var(--gray-2);
   color: var(--gray-12);
 }
 

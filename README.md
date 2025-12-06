@@ -57,10 +57,10 @@ npm run lint:fix
 
 ```bash
 # Build Docker image
-docker build -t react-vite-app .
+docker build -t blank-canvas .
 
 # Run container
-docker run -p 80:80 react-vite-app
+docker run -p 80:80 blank-canvas
 ```
 
 ## Project Structure
