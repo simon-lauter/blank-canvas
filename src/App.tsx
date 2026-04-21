@@ -1,23 +1,19 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navigation from "./components/Navigation";
+import { createBrowserRouter } from "react-router";
+import { RouterProvider } from "react-router/dom";
 import Home from "./pages/Home";
-import About from "./pages/About";
-import NotFound from "./pages/NotFound";
+import { Box } from "@radix-ui/themes";
 
-function App() {
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+]);
+
+export default function App() {
   return (
-    <BrowserRouter>
-      <Navigation />
-      <Routes>
-        {/* Add your routes here */}
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-
-        {/* 404 - Catch all unmatched routes */}
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </BrowserRouter>
+    <Box height="100svh">
+      <RouterProvider router={router} />
+    </Box>
   );
 }
-
-export default App;

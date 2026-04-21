@@ -1,10 +1,5 @@
-function Home() {
-  return (
-    <main>
-      <h1>Home</h1>
-      {/* Add your home page content here */}
-    </main>
-  )
-}
+import { Text } from "@radix-ui/themes";
 
-export default Home
+export default function Home() {
+      return <Text color="teal">Placeholder</Text>
+}
